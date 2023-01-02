@@ -7,9 +7,7 @@ const optionsHttps = {
     key: fs.readFileSync('./key.pem'),
     cert: fs.readFileSync('./cert.pem')
 };
-
 /*app.listen(port, () =>{
     console.log(`Servidor rodando na porta ${port}`);
 })*/
-
 https.createServer(optionsHttps, app).listen(port)
